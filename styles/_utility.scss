@@ -1,0 +1,145 @@
+@use "./variables" as var;
+@use "./setting" as set;
+
+.u-wrapper {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto 96px;
+  padding: 0 4%;
+}
+
+.c-sectionTitle {
+  font-weight: bold;
+  text-align: center;
+  font-size: 3.2rem;
+  margin-bottom: 51px;
+
+  @include set.mediaQuery(tab) {
+    font-size: 2.4rem;
+  }
+}
+
+.c-sectionTitle--white {
+  color: #fff;
+
+}
+
+.c-buttonLarge {
+  background-color: var.$blueFont;
+  height: 94px;
+  width: 189px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include set.mediaQuery(pc) {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.c-buttonLarge--item {
+
+  @include set.mediaQuery(pc) {
+    font-size: 1rem;
+  }
+}
+
+.c-buttonLarge--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.8rem;
+
+  @include set.mediaQuery(pc) {
+    flex-direction: column;
+  }
+}
+
+.c-contactForm--nameWrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.c-contactForm--seiBox,
+.c-contactForm--meiBox {
+  width: 48%;
+}
+
+.c-contactForm {
+  background-color: #fff;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 8px 8px 28px;
+}
+
+input {
+  width: 100%;
+}
+
+.c-contactForm--leadTop {
+  background-color: var.$blueFont;
+  text-align: center;
+  border-radius: 5px;
+  padding: 16px 15px 14px 16px;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  max-width: 100%;
+
+  @include set.mediaQuery(sp) {
+    font-size: 1.6rem;
+  }
+}
+
+.c-contactForm--title {
+  margin-bottom: 8px;
+}
+
+.c-contactForm--textBox {
+  background-color: var.$form;
+  border: 1px solid var.$formLine;
+  padding: 16px 0 16px 8px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  max-width: 100%;
+  width: 100%;
+}
+
+
+.c-contactForm--lead2 {
+  font-size: 1.4rem;
+  margin-bottom: 31px;
+}
+
+.c-buttonSmall--wrapper {
+  text-align: center;
+}
+
+.c-buttonSmall {
+  padding: 16px 40px;
+  color: #fff;
+  font-weight: bold;
+  background-color: var.$blueFont;
+  border-radius: 50px;
+  max-width: 320px;
+  width: 100%;
+}
+
+.c-buttonSmall.disappear {
+  width: 100%;
+}
+
+.c-buttonSmallWhite {
+  color: var.$blueFont;
+  background-color: #fff;
+  font-size: 2rem;
+}
+
+
+.c-blueText {
+  color: var.$blueFont;
+}
