@@ -181,12 +181,12 @@ img {
 
   @include set.mediaQuery(pcL) {
     left: 50%;
-    top: 43%;
+    top: 48%;
   }
 
   @include set.mediaQuery(tab) {
     left: 50%;
-    top: 40%;
+    top: 45%;
   }
 }
 

@@ -321,13 +321,13 @@ img {
 @media screen and (max-width: 1300px) {
   .mainViewArea__img {
     left: 50%;
-    top: 43%;
+    top: 48%;
   }
 }
 @media screen and (max-width: 720px) {
   .mainViewArea__img {
     left: 50%;
-    top: 40%;
+    top: 45%;
   }
 }
 
