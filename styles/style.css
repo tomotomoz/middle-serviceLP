@@ -77,6 +77,8 @@
 
 input {
   width: 100%;
+  padding-left: 8px;
+  padding-top: 11px;
 }
 
 .c-contactForm--leadTop {
@@ -103,11 +105,11 @@ input {
 .c-contactForm--textBox {
   background-color: #F5F8FA;
   border: 1px solid #CED4DA;
-  padding: 16px 0 16px 8px;
   border-radius: 5px;
   margin-bottom: 15px;
   max-width: 100%;
   width: 100%;
+  height: 48px;
 }
 
 .c-contactForm--lead2 {
@@ -294,11 +296,12 @@ img {
 }
 
 .mainViewArea {
-  background-image: linear-gradient(90deg, rgb(65, 164, 253), rgb(14, 244, 255));
+  background-image: linear-gradient(90deg, rgb(0, 127, 198) 0%, rgb(2, 209, 255) 100%);
   position: relative;
   max-width: 100%;
   margin: 96px auto 0;
-  padding: 84px;
+  padding-bottom: 10px;
+  padding-top: 84px;
   margin-bottom: 80px;
 }
 @media screen and (max-width: 1100px) {
@@ -311,11 +314,11 @@ img {
 
 .mainViewArea__img {
   position: absolute;
-  bottom: -100px;
+  bottom: -80px;
   left: 47%;
   transform: translate(-50%, -50%);
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
   .mainViewArea__img {
     left: 50%;
     top: 43%;
@@ -331,11 +334,13 @@ img {
 .mainViewArea__wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   -moz-column-gap: 88px;
        column-gap: 88px;
+  max-width: 1172px;
+  margin: 0 auto;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
   .mainViewArea__wrapper {
     flex-direction: column;
   }
@@ -358,6 +363,12 @@ img {
 .mainViewArea__textBox {
   color: #fff;
   margin-bottom: 37px;
+  text-align: left;
+}
+@media screen and (max-width: 1300px) {
+  .mainViewArea__textBox {
+    text-align: center;
+  }
 }
 
 .mainViewArea__text2 {
@@ -386,7 +397,6 @@ img {
 .mainViewArea__itemBox {
   display: flex;
   align-items: center;
-  justify-content: center;
   -moz-column-gap: 22px;
        column-gap: 22px;
   margin-bottom: 27px;
@@ -439,6 +449,7 @@ img {
 .mainViewArea__leadBox {
   color: #fff;
   font-size: 1.2rem;
+  text-align: left;
 }
 
 .choice__title {
@@ -678,13 +689,21 @@ img {
   border-radius: 5px;
   border-top: 12px solid #007FC6;
   text-align: center;
+  padding-top: 41px;
+  padding-bottom: 48px;
+}
+@media screen and (max-width: 720px) {
+  .price__content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .price__title {
   font-weight: bold;
   font-size: 2.4rem;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 720px) {
   .price__title {
     font-size: 1.2rem;
   }
@@ -694,7 +713,7 @@ img {
   font-size: 9.6rem;
   color: #007FC6;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 720px) {
   .price__largeText {
     font-size: 3.6rem;
   }
@@ -704,7 +723,7 @@ img {
   font-size: 3.2rem;
   font-weight: bold;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 720px) {
   .price__price {
     font-size: 1.2rem;
   }

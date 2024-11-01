@@ -157,11 +157,12 @@ img {
 
 // mainViewArea
 .mainViewArea {
-  background-image: linear-gradient(90deg, rgba(65, 164, 253, 1), rgba(14, 244, 255, 1));
+  background-image: linear-gradient(90deg, rgba(0,127,198,1) 0%, rgba(2,209,255,1) 100%);
   position: relative;
   max-width: 100%;
   margin: 96px auto 0;
-  padding: 84px;
+  padding-bottom: 10px;
+  padding-top: 84px;
   margin-bottom: 80px;
 
   @include set.mediaQuery(pc) {
@@ -173,12 +174,12 @@ img {
 
 .mainViewArea__img {
   position: absolute;
-  bottom: -100px;
+  bottom: -80px;
   left: 47%;
   transform: translate(-50%, -50%);
 
 
-  @include set.mediaQuery(pc) {
+  @include set.mediaQuery(pcL) {
     left: 50%;
     top: 43%;
   }
@@ -192,10 +193,12 @@ img {
 .mainViewArea__wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   column-gap: 88px;
+  max-width: 1172px;
+  margin: 0 auto;
 
-  @include set.mediaQuery(pc) {
+  @include set.mediaQuery(pcL) {
     flex-direction: column;
   }
 }
@@ -219,6 +222,10 @@ img {
 .mainViewArea__textBox {
   color: #fff;
   margin-bottom: 37px;
+  text-align: left;
+  @include set.mediaQuery(pcL) {
+    text-align: center;
+  }
 }
 
 .mainViewArea__text2 {
@@ -245,7 +252,6 @@ img {
 .mainViewArea__itemBox {
   display: flex;
   align-items: center;
-  justify-content: center;
   column-gap: 22px;
   margin-bottom: 27px;
 
@@ -292,6 +298,7 @@ img {
 .mainViewArea__leadBox {
   color: #fff;
   font-size: 1.2rem;
+  text-align: left;
 }
 
 // choice
@@ -522,13 +529,19 @@ img {
   border-radius: 5px;
   border-top: 12px solid var.$blueFont;
   text-align: center;
+  padding-top: 41px;
+  padding-bottom: 48px;
+  @include set.mediaQuery(tab) {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
 }
 
 .price__title {
   font-weight: bold;
   font-size: 2.4rem;
 
-  @include set.mediaQuery(pc) {
+  @include set.mediaQuery(tab) {
     font-size: 1.2rem;
   }
 }
@@ -537,7 +550,7 @@ img {
   font-size: 9.6rem;
   color: var.$blueFont;
 
-  @include set.mediaQuery(pc) {
+  @include set.mediaQuery(tab) {
     font-size: 3.6rem;
   }
 }
@@ -546,7 +559,7 @@ img {
   font-size: 3.2rem;
   font-weight: bold;
 
-  @include set.mediaQuery(pc) {
+  @include set.mediaQuery(tab) {
     font-size: 1.2rem;
   }
 }

@@ -77,6 +77,8 @@
 
 input {
   width: 100%;
+  padding-left: 8px;
+  padding-top: 11px;
 }
 
 .c-contactForm--leadTop {
@@ -102,11 +104,12 @@ input {
 .c-contactForm--textBox {
   background-color: var.$form;
   border: 1px solid var.$formLine;
-  padding: 16px 0 16px 8px;
+  
   border-radius: 5px;
   margin-bottom: 15px;
-  max-width: 100%;
+  max-width: 100%; 
   width: 100%;
+  height: 48px;
 }
 
 
