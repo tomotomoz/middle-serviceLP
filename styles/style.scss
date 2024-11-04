@@ -168,6 +168,7 @@ img {
   @include set.mediaQuery(pc) {
     padding-left: 4%;
     padding-right: 4%;
+    padding-bottom: 26px;
     margin-top: 64px;
   }
 }
@@ -257,6 +258,7 @@ img {
 
   @include set.mediaQuery(tab) {
     column-gap: 4px;
+    justify-content: center;
   }
 }
 
@@ -714,7 +716,7 @@ img {
 }
 
 .contact {
-  background-image: linear-gradient(90deg, rgba(65, 164, 253, 1), rgba(14, 244, 255, 1));
+  background-image: linear-gradient(90deg, rgba(0,127,198,1) 0%, rgba(2,209,255,1) 100%);
   padding: 97px 0 56px;
   padding-left: 4%;
   padding-right: 4%;
@@ -723,7 +725,6 @@ img {
 
 .contact__wrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
   column-gap: 35px;
 

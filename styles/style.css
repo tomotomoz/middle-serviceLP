@@ -15,6 +15,7 @@
 @media screen and (max-width: 720px) {
   .c-sectionTitle {
     font-size: 2.4rem;
+    margin-bottom: 26px;
   }
 }
 
@@ -308,6 +309,7 @@ img {
   .mainViewArea {
     padding-left: 4%;
     padding-right: 4%;
+    padding-bottom: 26px;
     margin-top: 64px;
   }
 }
@@ -405,6 +407,7 @@ img {
   .mainViewArea__itemBox {
     -moz-column-gap: 4px;
          column-gap: 4px;
+    justify-content: center;
   }
 }
 
@@ -881,7 +884,7 @@ img {
 }
 
 .contact {
-  background-image: linear-gradient(90deg, rgb(65, 164, 253), rgb(14, 244, 255));
+  background-image: linear-gradient(90deg, rgb(0, 127, 198) 0%, rgb(2, 209, 255) 100%);
   padding: 97px 0 56px;
   padding-left: 4%;
   padding-right: 4%;
@@ -889,7 +892,6 @@ img {
 
 .contact__wrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
   -moz-column-gap: 35px;
        column-gap: 35px;
